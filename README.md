@@ -4,7 +4,7 @@ The fourth project for [Frontend Mentor](https://www.frontendmentor.io/), was a 
 
 ### Live Example
 
-- [Go to Live Example](https://qr-code-frontendmentor-by-zuhaz.netlify.app/)
+- [Go to Live Example](https://results-summary-frontendmentor-zuhaz.netlify.app/)
 
 ### Screenshot
 
