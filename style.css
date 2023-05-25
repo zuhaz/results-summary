@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+/* font-family: 'Hanken Grotesk', sans-serif; */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 45rem;
+  height: 30rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.resultContainer {
+  color: white;
+  border-radius: 1.5rem;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  padding: 1rem;
+  align-items: center;
+}
+.yourResult {
+  font-size: 1.2rem;
+  color: hsl(241, 100%, 89%);
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.percentageContainer {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 0.9),
+    hsla(241, 72%, 46%, 0.2)
+  );
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+  padding: 1rem;
+}
+.percentageContainer h1 {
+  font-size: 3.5rem;
+  margin-top: 0.9rem;
+}
+.percentageContainer p {
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+.compliment {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 1.8rem;
+}
+.percenteageDescriptionContainer {
+  font-size: 1rem;
+  color: hsl(241, 100%, 89%);
+  margin: 3rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+.contentContainer {
+  margin: 3rem;
+  width: 100%;
+}
+.summaryText {
+  font-size: 1.3rem;
+}
+.results {
+  margin: 0.5rem;
+  margin-top: 3rem;
+}
+.resultCategoryReaction {
+  align-items: center;
+  display: flex;
+}
+.reactionIcon {
+  margin-right: 1rem;
+}
+.reactionText {
+  color: hsl(0, 100%, 67%);
+  font-weight: 600;
+  margin-right: 6rem;
+}
+.scoreReactionGot {
+  color: black;
+  font-weight: 600;
+}
+.scoreReactionTotal {
+  opacity: 0.6;
+  font: 500;
+}
+.resultCategoryMemory {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+}
+.memoryIcon {
+  margin-right: 1rem;
+}
+.memoryText {
+  color: hsl(39, 100%, 56%);
+  font-weight: 600;
+  margin-right: 6.1rem;
+}
+.scoreMemoryGot {
+  color: black;
+  font-weight: 600;
+}
+.scoreMemoryTotal {
+  opacity: 0.6;
+  font: 500;
+}
+.resultCategoryVerbal {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+}
+.verbalIcon {
+  margin-right: 1rem;
+}
+.verbalText {
+  color: hsl(166, 100%, 37%);
+  font-weight: 600;
+  margin-right: 6.9rem;
+}
+.scoreVerbalGot {
+  color: black;
+  font-weight: 600;
+}
+.scoreVerbalTotal {
+  opacity: 0.6;
+  font: 500;
+}
+.resultCategoryVisual {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+}
+.visualIcon {
+  margin-right: 1rem;
+}
+.visualText {
+  color: hsl(234, 85%, 45%);
+  font-weight: 600;
+  margin-right: 7rem;
+}
+.scoreVisualGot {
+  color: black;
+  font-weight: 600;
+}
+.scoreVisualTotal {
+  opacity: 0.6;
+  font: 500;
+}
+span {
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  opacity: 0.6;
+}
+.continueButtonContainer {
+  margin: 0.5rem;
+  margin-top: 2.6rem;
+}
+.continueButton {
+  width: 100%;
+  padding: 0.9rem;
+  border-radius: 5em;
+  outline: none;
+  border: none;
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.continueButton:hover {
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0.8)
+  );
+}
+
+/* Responsive */
+
+@media screen and (max-width: 750px) {
+  .container {
+    display: flex;
+    width: 43rem;
+    height: 30rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .resultContainer {
+    color: white;
+    border-radius: 1.5rem;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    padding: 1rem;
+  }
+  .percenteageDescriptionContainer {
+    margin: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .contentContainer {
+    margin-left: 2rem;
+  }
+  .summaryText {
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
+  }
+}
+@media screen and (max-width: 740px) {
+  .container {
+    display: flex;
+    width: 41rem;
+    height: 30rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .resultContainer {
+    color: white;
+    border-radius: 1.5rem;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    padding: 1rem;
+  }
+  .percenteageDescriptionContainer {
+    margin: 2.5rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .contentContainer {
+    margin-left: 2rem;
+  }
+  .summaryText {
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
+  }
+}
+@media screen and (max-width: 690px) {
+  .container {
+    display: flex;
+    width: 39rem;
+    height: 30rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .resultContainer {
+    width: 100%;
+    height: 100%;
+  }
+  .percenteageDescriptionContainer {
+    margin: 2.5rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .contentContainer {
+    margin-left: 1rem;
+  }
+  .summaryText {
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
+  }
+}
+@media screen and (max-width: 660px) {
+  .container {
+    display: flex;
+    width: 37rem;
+    height: 30rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .resultContainer {
+    width: 100%;
+  }
+  .percenteageDescriptionContainer {
+    margin: 2.5rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .contentContainer {
+    margin-left: 1rem;
+  }
+  .summaryText {
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
+  }
+}
+@media screen and (max-width: 630px) {
+  .container {
+    display: flex;
+    width: 35rem;
+    height: 30rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .resultContainer {
+    width: 150%;
+  }
+  .percenteageDescriptionContainer {
+    margin: 2.5rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .contentContainer {
+    margin-left: 1rem;
+  }
+  .summaryText {
+    font-size: 1.3rem;
+    margin-left: 2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    display: block;
+    width: 100%;
+    height: 20rem;
+    top: 0%;
+    left: 0%;
+    transform: translate(-0%, -0%);
+  }
+  .resultContainer {
+    width: 100%;
+    height: 130%;
+    border-radius: 0rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+  .summaryText {
+    margin: 1rem;
+  }
+  .contentContainer {
+    margin: 0rem;
+    width: 100%;
+  }
+  .results {
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .reactionText {
+    margin-right: 8rem;
+  }
+  .memoryText {
+    margin-right: 8rem;
+  }
+  .verbalText {
+    margin-right: 8.9rem;
+  }
+  .visualText {
+    margin-right: 9rem;
+  }
+  .continueButton {
+    width: 90%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .continueButtonContainer {
+    padding-bottom: 1rem;
+  }
+}
